@@ -36,6 +36,20 @@ public class HttpAppointment {
         this.appointmentTime = appointmentTime;
     }
 
+    public static HttpAppointment getDefaultInstance() {
+        return HttpAppointment.Builder
+                .newInstance()
+                .setFirstName("")
+                .setLastName("")
+                .setDateOfBirth(0)
+                .setEmail("")
+                .setPhoneNumber("")
+                .setAddress("")
+                .setLicensePhotoUrl("")
+                .setAppointmentTime(0)
+                .build();
+    }
+
     public String getId() {
         return id;
     }

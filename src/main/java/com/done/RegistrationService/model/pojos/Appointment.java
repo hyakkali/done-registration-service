@@ -3,6 +3,7 @@ package com.done.RegistrationService.model.pojos;
 import java.time.Instant;
 
 public class Appointment extends MongoObject {
+    public static final String EMAIL_FIELD_NAME = "email";
     public static final String APPOINTMENT_TIME_FIELD_NAME = "appointmentTime";
 
     private String firstName;

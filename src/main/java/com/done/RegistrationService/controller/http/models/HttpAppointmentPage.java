@@ -30,7 +30,7 @@ public class HttpAppointmentPage {
     }
 
     @JsonProperty("list")
-    public List<HttpAppointment> getCurations() {
+    public List<HttpAppointment> getAppointments() {
         return appointments;
     }
 

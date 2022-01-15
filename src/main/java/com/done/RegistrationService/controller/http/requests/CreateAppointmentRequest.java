@@ -1,9 +1,6 @@
 package com.done.RegistrationService.controller.http.requests;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-import java.util.Collections;
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonCreator;
 
 public class CreateAppointmentRequest {
     private String firstName;
@@ -18,6 +15,7 @@ public class CreateAppointmentRequest {
     public CreateAppointmentRequest() {
     }
 
+    @JsonCreator
     private CreateAppointmentRequest(
             String firstName,
             String lastName,
@@ -38,7 +36,7 @@ public class CreateAppointmentRequest {
         this.appointmentTime = appointmentTime;
     }
 
-    public CreateAppointmentRequest getDefaultInstance() {
+    public static CreateAppointmentRequest getDefaultInstance() {
         return CreateAppointmentRequest.Builder
                 .newInstance()
                 .setFirstName("")

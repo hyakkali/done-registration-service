@@ -1,6 +1,5 @@
 package com.done.RegistrationService.controller.http;
 
-import com.done.RegistrationService.App;
 import com.done.RegistrationService.controller.http.models.HttpAppointment;
 import com.done.RegistrationService.controller.http.models.HttpAppointmentPage;
 import com.done.RegistrationService.model.pojos.Appointment;
